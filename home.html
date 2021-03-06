@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<head>
+<link rel="stylesheet" href="style.css">
+</head>
+<html>
+  <header>
+<h1 id="title">BBMP SURVEY FORM</h1>
+  </header>
+  <body>
+<p id="description">Thank You For Taking  Step Ahead To Help Us To Improve Waste Management</p>
+
+<form id="survey-form">
+  
+  <div class="format">
+  
+  <label for="name" id="name-label">Name</label>
+  <input type="text" class="input" id="name" name="name" placeholder="Enter Your Name" required></input>
+
+<label for="email" id="email-label">E-mail</label>
+  <input type="email" class="input" id="email" name="email" placeholder="Enter Your E-mail Address" required></input>
+    
+    <label for="phone">Enter Your Contact number:</label>
+<input type="tel" id="phone" class="input" placeholder="Enter Your Contact Number" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+    
+<label for="number" id="number-label">Age</label>
+<input type="number" class="input" id="number" name="number" placeholder="10" min="10" max="60" required></input>
+   
+
+<label for="dropdown" id="model">Location</label>
+<select id="dropdown" class="input">
+  <option value="Bangalore-South">Bangalore-South</option>
+  <option value="Bangalore-North">Bangalore-North</option>
+  <option value="Bangalore-East">Bangalore-East</option>
+  <option value="Bangalore-West">Bangalore-West</option>
+</select>
+<br>
+ 
+<label for="waste" id="waste">Type Of Waste</label>
+<br>
+<input id="waste" type="radio" id="waste"  value="Dry Waste" name="type_of_waste"></input>
+<label for="waste">Dry Waste</label>
+<br>
+
+<input id="waste" type="radio" id="waste"  value="Wet Waste" name="type_of_waste"></input>
+<label for="waste">Wet Waste</label>
+<br>
+
+<label for="timings">Choose Timings </label>
+<br>
+<input id="checkbox" type="checkbox" name="timings" value="7am-9am">
+<label for="checkbox">7am-9am</label>
+<br>
+<input id="checkbox" type="checkbox" name="timings" value="8pm-10pm">
+<label for="checkbox">8pm-10pm</label>
+
+<br>
+<label id="textarea">Any comments or suggestions?</label>
+<br>
+<textarea id="textarea" class="text-input" placeholder="Enter Your Feedback" name="instructions" rows="5" columns="40"></textarea>
+<br>   
+
+<input id="submit" type="submit"  value="Submit" class="submit-button">
+
+</div>
+</form> 
+</body>
+</html>
